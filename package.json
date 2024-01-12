@@ -11,9 +11,11 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.5.2"
+    "@tauri-apps/api": "^1.5.2",
+    "svelte-spa-router": "^4.0.1"
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@tauri-apps/cli": "^1.5.8",
     "@tsconfig/svelte": "^5.0.2",
