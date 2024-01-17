@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Greet from '/src/lib/Greet.svelte' // idk why this an error but it works
+    import Greet from '../lib/Greet.svelte' // switched to reletive path 
 </script>
 <main class="container">
     <h1>MTSplan</h1>

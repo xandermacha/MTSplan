@@ -6,10 +6,15 @@
 fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
 }
+// 
+#[tauri::command]
+fn add_employee(employee_name: &str) -> String {
+    format!("Employee {} added", employee_name)
+}
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet])
+        .invoke_handler(tauri::generate_handler![greet, add_employee] )
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

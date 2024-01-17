@@ -1,5 +1,7 @@
 <!-- IDK this will be the dash board or sum 
-npm install svelte-spa-router -->
+npm install svelte-spa-router 
+npm install --save-dev @tauri-apps/cli
+npm install --save-dev @sveltejs/adapter-static -->
 <script lang="ts">
   import Router from "svelte-spa-router";
   import { push, replace, location } from "svelte-spa-router";
@@ -19,7 +21,7 @@ npm install svelte-spa-router -->
 
 <nav>
   <button on:click={go_home}>Home</button>
-  <button on:click={go_new_schedule}>NewSchedule</button>
+  <button on:click={go_new_schedule}>New Schedule</button>
 </nav>
 
 <main class="container">
